@@ -1,0 +1,60 @@
+# --- Security & Credentials ---
+# 절대 올라가면 안 되는 민감 정보
+.env
+*.json
+!IDENTITY.md
+!AGENTS.md
+!USER.md
+!SOUL.md
+!TOOLS.md
+!HEARTBEAT.md
+!BOOTSTRAP.md
+
+# --- Runtime & Session Data ---
+# 실행 시 생성되는 임시 데이터 및 로그
+logs/
+sessions/
+subagents/
+.clawhub/
+.openclaw/
+tmp/
+
+# --- Skills & Dependencies ---
+# 다시 설치 가능한 의존성 파일들
+node_modules/
+dist/
+build/
+
+# --- System Files ---
+# OS 레벨의 쓰레기 파일
+.DS_Store
+Thumbs.db
+
+exec-approvals.json
+openclaw.json.bak*
+*.bak
+
+# --- QMD & Agent Cache ---
+# 검색 인덱스 및 캐시 (재생성 가능)
+xdg-cache/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.pile
+
+# --- Agent Runtime Data ---
+agents/*/sessions/
+agents/*/qmd/
+agents/*/subagents/
+
+# --- Browser & Cache ---
+browser/
+canvas/
+media/inbound/
+completions/
+credentials/
+
+# --- OpenClaw Runtime ---
+*.jsonl
+memory/*.sqlite
+openclaw.json.pre-*
