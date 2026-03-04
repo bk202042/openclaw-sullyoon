@@ -46,6 +46,11 @@ openclaw --profile kimi memory status
 
 ## Skill Routing Guide
 
+### Browser 기본 정책 (추가)
+- 웹 페이지 탐색/인터넷 접근이 필요하면 **기본적으로 `agent-browser` 사용**.
+- 로그인/우회/탐지회피가 핵심 요구일 때만 `stealth-browser`로 승격.
+
+
 | Priority | Task Type | Tool | Location |
 |----------|-----------|------|----------|
 | 1순위 | Question-based search (질문 → 답변) | `tavily-search-pro` | `skills/tavily-search-pro/` |
