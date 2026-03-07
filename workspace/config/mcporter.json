@@ -35,6 +35,14 @@
         "https://gitmcp.io/google-gemini/gemini-cli"
       ],
       "description": "Gemini CLI docs MCP via gitmcp.io"
+    },
+    "cli-docs": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "https://gitmcp.io/googleworkspace/cli"
+      ],
+      "description": "Google Workspace CLI docs MCP via gitmcp.io"
     }
   },
   "imports": []
