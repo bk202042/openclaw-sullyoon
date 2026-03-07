@@ -1,0 +1,41 @@
+{
+  "mcpServers": {
+    "firecrawl": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "firecrawl-mcp"
+      ],
+      "env": {
+        "FIRECRAWL_API_KEY": "fc-08a607f577ef432bbcefe1df51c8d24f"
+      }
+    },
+    "excalidraw": {
+      "description": "Local Excalidraw MCP server",
+      "command": "node",
+      "args": [
+        "/Users/macbookair/mcp_excalidraw/dist/index.js"
+      ],
+      "env": {
+        "EXPRESS_SERVER_URL": "http://localhost:3000"
+      }
+    },
+    "openclaw-docs": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "https://gitmcp.io/openclaw/openclaw"
+      ],
+      "description": "OpenClaw docs MCP via gitmcp.io"
+    },
+    "gemini-cli-docs": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "https://gitmcp.io/google-gemini/gemini-cli"
+      ],
+      "description": "Gemini CLI docs MCP via gitmcp.io"
+    }
+  },
+  "imports": []
+}
