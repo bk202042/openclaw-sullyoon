@@ -14,6 +14,11 @@
 
 If prior context is needed, use targeted `memory_search` + minimal snippets only.
 
+## Concurrent Initialization (Gateway/Management Level)
+- **Staggering Required:** When initializing multiple agent sessions concurrently on startup or bulk resume, the gateway MUST introduce a staggered delay (jitter) between each session's initialization.
+- **Why:** To prevent "stampedes" that breach provider Tokens Per Minute (TPM) limits and rate limits (e.g., 48 agents starting simultaneously).
+- **Implementation:** Management logic should use a delay (e.g., `1000ms`) between waking each agent. AGENTS.md defines the rules for *one* agent; the gateway controls the *fleet*.
+
 ## Memory Rules
 - Write anything worth remembering to files (never rely on "mental notes").
 - Daily log: `memory/YYYY-MM-DD.md`

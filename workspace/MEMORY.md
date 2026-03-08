@@ -41,3 +41,15 @@
   2) commit on a clean feature branch,
   3) merge via PR (avoid force-overwrite on main).
 - Workspace split decision updated: `workspace-kimi` was removed from the main OpenClaw repo after being spun out as a separate project.
+
+## Security posture decision (2026-03-02)
+- Identified CRITICAL: Telegram `groupPolicy="open"` + elevated tools = prompt injection risk
+- Recommended fix: `allowlist` policy + `workspaceOnly=true` for filesystem tools
+- kimi profile has ongoing Discord latency issues (30s–10min timeouts) and Google AI API timeouts — needs root cause analysis, not just symptom tracking
+- Durable ops pattern: `openclaw status` can look healthy while severe security misconfigurations remain; always pair health checks with `openclaw security audit`.
+- Carryover state reaffirmed (2026-03-03): security mitigation is still pending; treat posture as unresolved-high-risk until allowlist + workspace-only controls are actually applied.
+
+## Operational hygiene pattern (2026-03-05)
+- Night checkpoint surfaced missing same-day daily log file; this is a repeatable execution risk.
+- Durable fix: create/update `memory/YYYY-MM-DD.md` early in the day (not only at night) so nightly distillation has source-of-truth input.
+- Reconfirmed on 2026-03-07: if today’s log is missing at checkpoint time, treat it as a process failure and create a minimal dated entry immediately.

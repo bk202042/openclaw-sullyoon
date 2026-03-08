@@ -18,6 +18,8 @@ subagents/
 .clawhub/
 .openclaw/
 tmp/
+telegram/
+*.log
 
 # --- Skills & Dependencies ---
 # 다시 설치 가능한 의존성 파일들
