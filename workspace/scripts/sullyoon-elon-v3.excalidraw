@@ -1,0 +1,564 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "http://localhost:3000",
+  "elements": [
+    {
+      "id": "oppa",
+      "type": "rectangle",
+      "x": 490,
+      "y": 30,
+      "width": 200,
+      "height": 70,
+      "backgroundColor": "#d0ebff",
+      "strokeColor": "#1c7ed6",
+      "strokeWidth": 2,
+      "roughness": 0,
+      "label": {
+        "text": "Oppa (강병의)  👤"
+      },
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-03-08T10:06:54.516Z",
+      "updatedAt": "2026-03-08T10:06:54.517Z",
+      "version": 1
+    },
+    {
+      "id": "sullyoon",
+      "type": "rectangle",
+      "x": 390,
+      "y": 185,
+      "width": 400,
+      "height": 100,
+      "backgroundColor": "#e5dbff",
+      "strokeColor": "#7048e8",
+      "strokeWidth": 2,
+      "roughness": 0,
+      "label": {
+        "text": "SULLYOON  🫧\nConductor / Orchestrator\nClaude Sonnet  ·  Telegram"
+      },
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-03-08T10:06:54.517Z",
+      "updatedAt": "2026-03-08T10:06:54.517Z",
+      "version": 1
+    },
+    {
+      "id": "elon",
+      "type": "rectangle",
+      "x": 30,
+      "y": 420,
+      "width": 290,
+      "height": 110,
+      "backgroundColor": "#d3f9d8",
+      "strokeColor": "#2f9e44",
+      "strokeWidth": 2,
+      "roughness": 0,
+      "label": {
+        "text": "ELON\nSpecialist / Scout\nKimi Moonshot  ·  Discord"
+      },
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-03-08T10:06:54.517Z",
+      "updatedAt": "2026-03-08T10:06:54.517Z",
+      "version": 1
+    },
+    {
+      "id": "sub-box",
+      "type": "rectangle",
+      "x": 680,
+      "y": 400,
+      "width": 310,
+      "height": 185,
+      "backgroundColor": "#fff9db",
+      "strokeColor": "#e67700",
+      "strokeWidth": 2,
+      "roughness": 0,
+      "label": {
+        "text": "Sub-Agents  (일회성)"
+      },
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-03-08T10:06:54.517Z",
+      "updatedAt": "2026-03-08T10:06:54.517Z",
+      "version": 1
+    },
+    {
+      "id": "researcher",
+      "type": "rectangle",
+      "x": 698,
+      "y": 435,
+      "width": 274,
+      "height": 38,
+      "backgroundColor": "#ffe8cc",
+      "strokeColor": "#e67700",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "label": {
+        "text": "🔍 Researcher  (flash 3 · search only)"
+      },
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-03-08T10:06:54.517Z",
+      "updatedAt": "2026-03-08T10:06:54.517Z",
+      "version": 1
+    },
+    {
+      "id": "builder",
+      "type": "rectangle",
+      "x": 698,
+      "y": 483,
+      "width": 274,
+      "height": 38,
+      "backgroundColor": "#ffe8cc",
+      "strokeColor": "#e67700",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "label": {
+        "text": "🔨 Builder  (Sonnet · write + exec)"
+      },
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-03-08T10:06:54.517Z",
+      "updatedAt": "2026-03-08T10:06:54.517Z",
+      "version": 1
+    },
+    {
+      "id": "verifier",
+      "type": "rectangle",
+      "x": 698,
+      "y": 531,
+      "width": 274,
+      "height": 38,
+      "backgroundColor": "#ffe8cc",
+      "strokeColor": "#e67700",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "label": {
+        "text": "✅ Verifier  (flash 3 · 2-strike gate)"
+      },
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-03-08T10:06:54.517Z",
+      "updatedAt": "2026-03-08T10:06:54.517Z",
+      "version": 1
+    },
+    {
+      "id": "alfred",
+      "type": "rectangle",
+      "x": 390,
+      "y": 420,
+      "width": 240,
+      "height": 90,
+      "backgroundColor": "#ffe3e3",
+      "strokeColor": "#c92a2a",
+      "strokeWidth": 2,
+      "roughness": 0,
+      "label": {
+        "text": "ALFRED  🌙\nImprove Agent / Curator\nflash 3  ·  새벽 3시 cron"
+      },
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-03-08T10:06:54.517Z",
+      "updatedAt": "2026-03-08T10:06:54.517Z",
+      "version": 1
+    },
+    {
+      "id": "shared",
+      "type": "rectangle",
+      "x": 80,
+      "y": 660,
+      "width": 950,
+      "height": 130,
+      "backgroundColor": "#f1f3f5",
+      "strokeColor": "#868e96",
+      "strokeWidth": 2,
+      "roughness": 0,
+      "label": {
+        "text": "Shared Workspace  (Google Drive — 진실의 원천)\nspecs/  ·  research/  ·  deliverables/  ·  mail/inbox/  ·  feedback/  ·  expertise.yaml"
+      },
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-03-08T10:06:54.517Z",
+      "updatedAt": "2026-03-08T10:06:54.517Z",
+      "version": 1
+    },
+    {
+      "id": "discord-layer",
+      "type": "rectangle",
+      "x": 80,
+      "y": 820,
+      "width": 950,
+      "height": 65,
+      "backgroundColor": "#edf2ff",
+      "strokeColor": "#5865f2",
+      "strokeWidth": 2,
+      "roughness": 0,
+      "label": {
+        "text": "Discord  (알림 레이어만)  —  #active-tasks  ·  #memory-decisions"
+      },
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "createdAt": "2026-03-08T10:06:54.517Z",
+      "updatedAt": "2026-03-08T10:06:54.517Z",
+      "version": 1
+    },
+    {
+      "id": "a1",
+      "type": "arrow",
+      "x": 590,
+      "y": 108,
+      "width": 0,
+      "height": 85,
+      "strokeColor": "#1c7ed6",
+      "strokeWidth": 2,
+      "roughness": 0,
+      "label": {
+        "text": "intent"
+      },
+      "createdAt": "2026-03-08T10:06:54.517Z",
+      "updatedAt": "2026-03-08T10:06:54.517Z",
+      "version": 1,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          69
+        ]
+      ],
+      "startBinding": {
+        "elementId": "oppa",
+        "focus": 0,
+        "gap": 8
+      },
+      "endBinding": {
+        "elementId": "sullyoon",
+        "focus": 0,
+        "gap": 8
+      }
+    },
+    {
+      "id": "a2",
+      "type": "arrow",
+      "x": 496.6163529884249,
+      "y": 289.00500068139286,
+      "width": -160,
+      "height": 135,
+      "strokeColor": "#7048e8",
+      "strokeWidth": 2,
+      "roughness": 0,
+      "label": {
+        "text": "specs/task\n(async)"
+      },
+      "createdAt": "2026-03-08T10:06:54.517Z",
+      "updatedAt": "2026-03-08T10:06:54.517Z",
+      "version": 1,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -219.58687264351647,
+          126.98999863721428
+        ]
+      ],
+      "startBinding": {
+        "elementId": "sullyoon",
+        "focus": 0,
+        "gap": 8
+      },
+      "endBinding": {
+        "elementId": "elon",
+        "focus": 0,
+        "gap": 8
+      }
+    },
+    {
+      "id": "a3",
+      "type": "arrow",
+      "x": 643.0872461245797,
+      "y": 290.7957790901194,
+      "width": 95,
+      "height": 115,
+      "strokeColor": "#7048e8",
+      "strokeWidth": 2,
+      "roughness": 0,
+      "label": {
+        "text": "spawn"
+      },
+      "createdAt": "2026-03-08T10:06:54.517Z",
+      "updatedAt": "2026-03-08T10:06:54.517Z",
+      "version": 1,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          98.38861454695711,
+          103.40844181976115
+        ]
+      ],
+      "startBinding": {
+        "elementId": "sullyoon",
+        "focus": 0,
+        "gap": 8
+      },
+      "endBinding": {
+        "elementId": "sub-box",
+        "focus": 0,
+        "gap": 8
+      }
+    },
+    {
+      "id": "a4",
+      "type": "arrow",
+      "x": 569.9805306526437,
+      "y": 292.5559743736493,
+      "width": 0,
+      "height": 135,
+      "strokeColor": "#c92a2a",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "label": {
+        "text": "feedback/"
+      },
+      "createdAt": "2026-03-08T10:06:54.517Z",
+      "updatedAt": "2026-03-08T10:06:54.517Z",
+      "version": 1,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -41.700191740069954,
+          119.88805125270142
+        ]
+      ],
+      "startBinding": {
+        "elementId": "sullyoon",
+        "focus": 0,
+        "gap": 8
+      },
+      "endBinding": {
+        "elementId": "alfred",
+        "focus": 0,
+        "gap": 8
+      }
+    },
+    {
+      "id": "a5",
+      "type": "arrow",
+      "x": 265.28333665795157,
+      "y": 534.3969320118102,
+      "width": 0,
+      "height": 130,
+      "strokeColor": "#2f9e44",
+      "strokeWidth": 2,
+      "roughness": 0,
+      "label": {
+        "text": "research/\nmail/inbox/"
+      },
+      "createdAt": "2026-03-08T10:06:54.518Z",
+      "updatedAt": "2026-03-08T10:06:54.518Z",
+      "version": 1,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          184.23332668409688,
+          121.20613597637953
+        ]
+      ],
+      "startBinding": {
+        "elementId": "elon",
+        "focus": 0,
+        "gap": 8
+      },
+      "endBinding": {
+        "elementId": "shared",
+        "focus": 0,
+        "gap": 8
+      }
+    },
+    {
+      "id": "a6",
+      "type": "arrow",
+      "x": 717.4473810712411,
+      "y": 590.1106567890588,
+      "width": 0,
+      "height": 75,
+      "strokeColor": "#e67700",
+      "strokeWidth": 2,
+      "roughness": 0,
+      "label": {
+        "text": "deliverables/"
+      },
+      "createdAt": "2026-03-08T10:06:54.518Z",
+      "updatedAt": "2026-03-08T10:06:54.518Z",
+      "version": 1,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -78.01304171237473,
+          64.77868642188241
+        ]
+      ],
+      "startBinding": {
+        "elementId": "sub-box",
+        "focus": 0,
+        "gap": 8
+      },
+      "endBinding": {
+        "elementId": "shared",
+        "focus": 0,
+        "gap": 8
+      }
+    },
+    {
+      "id": "a7",
+      "type": "arrow",
+      "x": 519.1527930081076,
+      "y": 517.8828040468436,
+      "width": 0,
+      "height": 150,
+      "strokeColor": "#c92a2a",
+      "strokeWidth": 2,
+      "roughness": 0,
+      "label": {
+        "text": "expertise.yaml\n(독점 write)"
+      },
+      "createdAt": "2026-03-08T10:06:54.518Z",
+      "updatedAt": "2026-03-08T10:06:54.518Z",
+      "version": 1,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          23.232875522246445,
+          134.2343919063128
+        ]
+      ],
+      "startBinding": {
+        "elementId": "alfred",
+        "focus": 0,
+        "gap": 8
+      },
+      "endBinding": {
+        "elementId": "shared",
+        "focus": 0,
+        "gap": 8
+      }
+    },
+    {
+      "id": "a8",
+      "type": "arrow",
+      "x": 560.2128335427603,
+      "y": 652.0203304013542,
+      "width": 0,
+      "height": -375,
+      "strokeColor": "#868e96",
+      "strokeWidth": 2,
+      "roughness": 0,
+      "label": {
+        "text": "synthesize"
+      },
+      "createdAt": "2026-03-08T10:06:54.518Z",
+      "updatedAt": "2026-03-08T10:06:54.518Z",
+      "version": 1,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          25.645761485907883,
+          -359.04066080270826
+        ]
+      ],
+      "startBinding": {
+        "elementId": "shared",
+        "focus": 0,
+        "gap": 8
+      },
+      "endBinding": {
+        "elementId": "sullyoon",
+        "focus": 0,
+        "gap": 8
+      }
+    },
+    {
+      "id": "a9",
+      "type": "arrow",
+      "x": 555,
+      "y": 798,
+      "width": 0,
+      "height": 30,
+      "strokeColor": "#5865f2",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "label": {
+        "text": "알림 신호"
+      },
+      "createdAt": "2026-03-08T10:06:54.518Z",
+      "updatedAt": "2026-03-08T10:06:54.518Z",
+      "version": 1,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          14
+        ]
+      ],
+      "startBinding": {
+        "elementId": "shared",
+        "focus": 0,
+        "gap": 8
+      },
+      "endBinding": {
+        "elementId": "discord-layer",
+        "focus": 0,
+        "gap": 8
+      }
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
