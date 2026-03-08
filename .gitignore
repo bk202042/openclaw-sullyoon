@@ -2,6 +2,7 @@
 # 절대 올라가면 안 되는 민감 정보
 .env
 *.json
+!workspace/scripts/drive-folders.json
 !IDENTITY.md
 !AGENTS.md
 !USER.md

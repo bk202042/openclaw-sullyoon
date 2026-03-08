@@ -109,48 +109,59 @@ fi
 
 log "☁️  Uploading to Google Drive: ${DRIVE_MONTH_FOLDER}/..."
 
-# Ensure parent folder exists and get/create month subfolder
-PARENT_ID=$(gog drive mkdir --parents "${DRIVE_PARENT_FOLDER}" 2>/dev/null | grep -o '"id":"[^"]*"' | head -1 | cut -d'"' -f4 || true)
+# --- Resolve or create Drive folder structure --------------------------------
+FOLDERS_CONFIG="$(dirname "$0")/drive-folders.json"
 
-if [[ -z "$PARENT_ID" ]]; then
-  # Try list approach
-  PARENT_ID=$(gog drive ls --name "${DRIVE_PARENT_FOLDER}" --json 2>/dev/null | python3 -c "import json,sys; d=json.load(sys.stdin); print(d[0]['id'])" 2>/dev/null || true)
+# Get root folder ID
+ROOT_ID=$(python3 -c "import json; d=json.load(open('${FOLDERS_CONFIG}')); print(d['root']['id'])" 2>/dev/null || true)
+if [[ -z "$ROOT_ID" ]]; then
+  log "   Creating root folder: ${DRIVE_PARENT_FOLDER}"
+  ROOT_RESULT=$(gws drive files create \
+    --params '{"fields":"id,name"}' \
+    --json "{\"name\":\"${DRIVE_PARENT_FOLDER}\",\"mimeType\":\"application/vnd.google-apps.folder\"}" 2>/dev/null)
+  ROOT_ID=$(echo "$ROOT_RESULT" | python3 -c "import json,sys; print(json.load(sys.stdin)['id'])")
+fi
+
+# Get or create month subfolder
+MONTH_ID=$(python3 -c "import json; d=json.load(open('${FOLDERS_CONFIG}')); print(d['months'].get('${DATEMONTH}',{}).get('id',''))" 2>/dev/null || true)
+if [[ -z "$MONTH_ID" ]]; then
+  log "   Creating month folder: ${DATEMONTH}"
+  MONTH_RESULT=$(gws drive files create \
+    --params '{"fields":"id,name,webViewLink"}' \
+    --json "{\"name\":\"${DATEMONTH}\",\"mimeType\":\"application/vnd.google-apps.folder\",\"parents\":[\"${ROOT_ID}\"]}" 2>/dev/null)
+  MONTH_ID=$(echo "$MONTH_RESULT" | python3 -c "import json,sys; print(json.load(sys.stdin)['id'])")
+  MONTH_URL=$(echo "$MONTH_RESULT" | python3 -c "import json,sys; print(json.load(sys.stdin)['webViewLink'])")
+  # Save to config
+  python3 -c "
+import json
+with open('${FOLDERS_CONFIG}') as f: d=json.load(f)
+d['months']['${DATEMONTH}'] = {'id': '${MONTH_ID}', 'url': '${MONTH_URL}'}
+with open('${FOLDERS_CONFIG}','w') as f: json.dump(d,f,indent=2)
+"
 fi
 
 # Upload archive
-FILE_ID=$(gog drive upload \
-  --file "$ARCHIVE_PATH" \
-  --name "$ARCHIVE_NAME" \
-  --folder "${DRIVE_MONTH_FOLDER}" \
-  --parents \
-  2>/dev/null | grep -o '"id":"[^"]*"' | head -1 | cut -d'"' -f4 || true)
+FILE_RESULT=$(gws drive +upload "$ARCHIVE_PATH" --parent "$MONTH_ID" 2>/dev/null)
+FILE_ID=$(echo "$FILE_RESULT" | python3 -c "import json,sys; print(json.load(sys.stdin)['id'])" 2>/dev/null || true)
 
 # Upload checksum
-gog drive upload \
-  --file "$CHECKSUM_PATH" \
-  --name "${ARCHIVE_NAME}.sha256" \
-  --folder "${DRIVE_MONTH_FOLDER}" \
-  --parents \
-  2>/dev/null || true
+gws drive +upload "$CHECKSUM_PATH" --parent "$MONTH_ID" 2>/dev/null || true
 
 log "✅ Upload complete. File ID: ${FILE_ID:-unknown}"
 
 # --- Retention: delete old backups -------------------------------------------
 log "🗑️  Applying retention policy (>${RETENTION_DAYS} days)..."
-CUTOFF=$(date -v-${RETENTION_DAYS}d +"%Y-%m-%dT%H:%M:%S" 2>/dev/null || date -d "-${RETENTION_DAYS} days" +"%Y-%m-%dT%H:%M:%S")
+CUTOFF=$(date -v-${RETENTION_DAYS}d +"%Y-%m-%dT%H:%M:%SZ" 2>/dev/null || date -d "-${RETENTION_DAYS} days" +"%Y-%m-%dT%H:%M:%SZ")
 
-OLD_FILES=$(gog drive ls \
-  --folder "${DRIVE_PARENT_FOLDER}" \
-  --recursive \
-  --json \
+OLD_FILES=$(gws drive files list \
+  --params "{\"q\":\"'${ROOT_ID}' in parents and name contains 'openclaw-backup-' and trashed=false\",\"fields\":\"files(id,name,createdTime)\"}" \
   2>/dev/null | python3 -c "
 import json, sys
-from datetime import datetime
 cutoff = '${CUTOFF}'
-files = json.load(sys.stdin)
-for f in files:
+data = json.load(sys.stdin)
+for f in data.get('files', []):
     created = f.get('createdTime','')[:19]
-    if created and created < cutoff and f.get('name','').startswith('openclaw-backup-'):
+    if created and created.replace('T',' ') < cutoff.replace('T',' ').replace('Z',''):
         print(f['id'] + ' ' + f['name'])
 " 2>/dev/null || true)
 
@@ -159,7 +170,7 @@ if [[ -n "$OLD_FILES" ]]; then
     FILE_ID_OLD=$(echo "$line" | awk '{print $1}')
     FILE_NAME_OLD=$(echo "$line" | awk '{print $2}')
     log "   Deleting old backup: ${FILE_NAME_OLD}"
-    gog drive delete --id "$FILE_ID_OLD" 2>/dev/null || true
+    gws drive files delete --params "{\"fileId\":\"${FILE_ID_OLD}\"}" 2>/dev/null || true
   done <<< "$OLD_FILES"
 else
   log "   No old backups to delete."
