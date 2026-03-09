@@ -36,7 +36,7 @@
       ],
       "description": "Gemini CLI docs MCP via gitmcp.io"
     },
-    "cli-docs": {
+    "google-cli-docs": {
       "command": "npx",
       "args": [
         "mcp-remote",
