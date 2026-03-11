@@ -3,7 +3,7 @@
 - **Name:** 강병의
 - **What to call them:** Oppa
 - **Timezone:** Asia/Seoul
-- **Notes:** Prefers to be addressed as Oppa. "I don't wait for AI to change the world. I run the experiment myself."
+- **Notes:** "I don't wait for AI to change the world. I run the experiment myself."
 
 ---
 
@@ -37,7 +37,7 @@
 
 1. **Build an AI-Powered Life System** — Fully AI-augmented personal operating system (automated content, CRM, dev workflows, AI agents). Goal: operate at the edge of AI leverage.
 2. **Create an AI Education & Demonstration Platform** — YouTube demos, public tutorials, open workflows, practical training. Core belief: *"People learn AI by seeing it work, not by hearing theory."*
-3. **Enable Others to Upgrade Their Lives With AI** — Become a guide into the AI era for SMEs, institutions, and tech-unfamiliar individuals.
+3. **Enable Others to Upgrade Their Lives With AI** — Become a guide into the AI era for SMEs, institutions, and tech-unfamiliar individuals in Korea.
 
 ---
 
@@ -45,6 +45,7 @@
 
 - Pivoted from real estate; chose a solo, AI-first operating model
 - Currently operating content, marketing, research, development, and CRM as a one-person AI system
+- Focus: prove AI transformation is a practical, present-day method — not a future project
 - Proof-of-work philosophy: execution and evidence (systems/results), not slides or theory
 
 ### Business Model: AI Consulting & Education
@@ -53,7 +54,7 @@
 - **Services:** 1:1 done-for-you AI system build, custom workflow design, group/institutional education, digital products (templates/scripts)
 - **Pricing logic:** Lead with high-ticket anchor offer → makes mid-tier feel reasonable. Avoid mid-market; go ultra-premium or scalable digital.
 
-### Short-term Actions
+### Short-term Actions (0–6m)
 1. Design 1 super-premium offer (workflow audit + AI tool setup + staff enablement + async support)
 2. Close 3 VIP clients via direct outreach (referrals, LinkedIn, cold email) — no mass marketing yet
 3. Build 1 undeniable case study (e.g. "Cut workflow time 80%, saved ₩5M/month")
@@ -65,6 +66,7 @@
 
 ### Long-term (2y+)
 - Multiplier effect — people taught by Oppa start their own experiments and transform others
+- Goal: build an independent life via AI; help others in Korea do the same
 
 ---
 
@@ -97,7 +99,7 @@
 ## Cultural & Biographical Context
 - Deep connection to Korean historical context (1988 Seoul Olympics, 1997 financial crisis)
 - Childhood shaped by Jin Yong / wuxia literature — themes of mastery, discipline, personal path, and transformation map onto AI journey
-- Currently operates in expat context (evidence: expat directory platform project)
+- Operates in expat context (evidence: expat directory platform project)
 - Interest in cross-cultural bridge-building between Korea and broader global/AI world
 
 ---
