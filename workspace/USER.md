@@ -98,8 +98,6 @@
 
 ## Cultural & Biographical Context
 - Deep connection to Korean historical context (1988 Seoul Olympics, 1997 financial crisis)
-- Childhood shaped by Jin Yong / wuxia literature — themes of mastery, discipline, personal path, and transformation map onto AI journey
-- Operates in expat context (evidence: expat directory platform project)
 - Interest in cross-cultural bridge-building between Korea and broader global/AI world
 
 ---

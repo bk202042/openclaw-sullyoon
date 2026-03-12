@@ -1,18 +1,17 @@
 # AGENTS.md
 
 ## Session Start (always)
-1. Read `SOUL.md`
-2. Read `USER.md`
-3. Read `IDENTITY.md`
-4. Read `memory/YYYY-MM-DD.md` for today (if it exists)
+1. Read `SOUL.md`, `USER.md`, `IDENTITY.md`
+2. Read `memory/YYYY-MM-DD.md` for today (if it exists)
+
+## Before Every Task
+1. **Search daily logs**: run `memory_search` with the task topic — surface relevant past work, decisions, and failures
+2. **Check learnings**: scan `LEARNINGS.md` for sections related to the task type (coding, research, config, etc.) and apply any matching rules
+3. If a matching learnings rule exists, follow it; if not, proceed normally
 
 ## Do NOT auto-load
-- `MEMORY.md`
-- session history
-- prior messages
-- previous tool outputs
-
-If prior context is needed, use targeted `memory_search` + minimal snippets only.
+- `MEMORY.md`, session history, prior messages, previous tool outputs
+- If extra context is needed beyond the steps above, use targeted `memory_search` + minimal snippets only
 
 ## Concurrent Initialization (Gateway/Management Level)
 - **Staggering Required:** When initializing multiple agent sessions concurrently on startup or bulk resume, the gateway MUST introduce a staggered delay (jitter) between each session's initialization.
@@ -46,20 +45,12 @@ The context window is a finite budget. Treat every token like cash.
 3. Discard raw tool output, terminal dumps, intermediate reasoning
 4. Resume with just the distilled summary
 
-### Tool Output Discipline
-- Cap long commands: `| head -n 50` or `| tail -n 50`
-- Never run unbounded `cat`, `ls -R`, or snapshot commands
-- After ingesting a large document: extract → save → flush
+
 
 ## Safety
 - Never exfiltrate private data.
 - Ask before destructive commands or external/public actions.
 - Prefer recoverable actions (`trash` over `rm`).
-
-## Messaging / Group Behavior
-- In groups: respond only when directly asked or adding clear value.
-- Don't spam; one strong reply beats multiple fragments.
-- Use reactions sparingly when they reduce noise.
 
 ## Multi-Agent Orchestration
 - **Delegate complex work**:
@@ -100,20 +91,13 @@ The context window is a finite budget. Treat every token like cash.
 4. 한 세션에서 전체를 끝내려 하지 마라 — 점진적 진행
 
 ## Tools & Preferences
-- Use skills for specialized workflows.
-- **Question-based search** (질문 → 답변 필요): Tavily (search-first: 다중 소스 탐색 및 합성)
-- **URL-based extraction** (특정 사이트/문서 추출): firecrawl-mcp (extraction-first: 딥 스크래핑, SPA, PDF)
-- **Deep code & people research**: exa-mcp (개발 문서, 코드 컨텍스트, 특정 인물 검색)
-- **Browser automation** (최후 수단): stealth-browser (로그인, 클릭 등 UI 상호작용 필요시만)
+- For tool routing, skill selection, and research tool decisions, follow `TOOLS.md` (source of truth).
+- If `AGENTS.md` and `TOOLS.md` conflict, prefer `TOOLS.md`.
 - Don't run internet-sourced code without explicit user approval.
 - Don't touch macOS system files unless user explicitly asks.
-- For multi-profile/channel/QMD operations, follow `TOOLS.md` runbook as source of truth.
-- If `AGENTS.md` and `TOOLS.md` conflict on operations, prefer `TOOLS.md` (operational policy).
 
-## Anti-Patterns (NEVER DO THIS)
-- **No One-Shotting**: Never attempt to complete a complex task in a single pass. One feature → verify → commit → next.
-- **No Premature Completion**: Never declare "done" without running end-to-end verification. If you can't test it, you can't call it finished.
-- **No Cascading Errors**: If you're 3+ steps into a wrong path, STOP. Re-read the original goal. Reassess strategy. Don't throw good tokens after bad.
+## Anti-Patterns
+- See `LEARNINGS.md` for hard-won rules. Key ones: no one-shotting, no premature completion, two-strike strategy change.
 
 ## Self-Correction Protocol (CRITIC)
 After completing a complex task:
