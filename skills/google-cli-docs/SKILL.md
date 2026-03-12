@@ -1,0 +1,1 @@
+---\nname: google-cli-docs\ndescription: Access Google Workspace CLI official documentation and source code repository via gitmcp.io.\nmetadata:\n  openclaw:\n    emoji: \"🛠️\"\n---\n\n# Google CLI Docs (gitmcp)\n\nAccess documentation and source repository for Google Workspace CLI via MCP.\nUse `mcporter call google-cli-docs.<tool>` to interact with it.\n

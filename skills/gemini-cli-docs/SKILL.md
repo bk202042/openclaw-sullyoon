@@ -1,0 +1,1 @@
+---\nname: gemini-cli-docs\ndescription: Access Google Gemini CLI official documentation and source code repository via gitmcp.io.\nmetadata:\n  openclaw:\n    emoji: \"💎\"\n---\n\n# Gemini CLI Docs (gitmcp)\n\nAccess documentation and source repository for gemini-cli via MCP.\nUse `mcporter call gemini-cli-docs.<tool>` to interact with it.\n
