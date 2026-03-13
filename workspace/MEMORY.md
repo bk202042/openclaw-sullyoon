@@ -62,6 +62,10 @@ Full spec: `shared-brain/knowledge/02_concepts/sullyoon-elon-collab-v3.md`. Key 
 - Durable convention: align identical capabilities under the same server/skill key names across instances (example adopted: mcporter key normalized to `google-cli-docs`).
 - `google-cli-docs` and `gemini-cli-docs` were installed into default OpenClaw skills to reduce profile drift.
 - Integration decision: when importing external skills with strong vendor-CLI assumptions (e.g., Anthropic `skill-creator`), prefer **side-by-side install under a distinct name first**, validate in OpenClaw, then promote.
+- Kimi skills root is strict: **symlinks resolving outside the configured root are skipped**. Fix by installing skills directly into `workspace-kimi/skills` or aligning skills root; **AUTH_TOKEN/CT0 env vars are profile-specific**.
+
+## Tooling reliability (2026-03-12)
+- `memory_search` currently fails because Gemini embedding API key is missing/invalid; restore provider config to re-enable recall.
 
 ## Backup operations (2026-03-09)
 - Daily backup workflow reaffirmed for both instances (`openclaw`, `openclaw-kimi`) with same-day upload to Google Drive `OpenClaw/01_Backup/YYYY-MM-DD`.

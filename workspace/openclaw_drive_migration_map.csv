@@ -1,0 +1,15 @@
+type,source,source_name,target_bucket,target_parent_id,target_name,size_mb,status
+folder,/Users/macbookair/Documents/문서 - 강병의 MacBook Air/personal/09 openclaw/01 Official_docs,01 Official_docs,05_Docs,1jJV0WHsl0VAy5hoGQxYsKEuBIDqvH0mg,01 Official_docs,,planned
+folder,/Users/macbookair/Documents/문서 - 강병의 MacBook Air/personal/09 openclaw/02 skills,02 skills,03_Skills,18WeMf8HsmOGUqv9C_nGQQJseZ-wU8rxq,02 skills,,planned
+folder,/Users/macbookair/Documents/문서 - 강병의 MacBook Air/personal/09 openclaw/03 resource,03 resource,05_Docs,1jJV0WHsl0VAy5hoGQxYsKEuBIDqvH0mg,03 resource,,planned
+folder,/Users/macbookair/Documents/문서 - 강병의 MacBook Air/personal/09 openclaw/04 config,04 config,02_Config,1QPhBTHcaS0H3L_OCLYoTd6eanV4ajmqq,04 config,,planned
+folder,/Users/macbookair/Documents/문서 - 강병의 MacBook Air/personal/09 openclaw/05 mission control,05 mission control,04_Use_Cases,1DehycjVxfq7AxwAcpMSjvC8T2fTCOx8b,05 mission control,,planned
+folder,/Users/macbookair/Documents/문서 - 강병의 MacBook Air/personal/09 openclaw/07 prompts,07 prompts,05_Docs,1jJV0WHsl0VAy5hoGQxYsKEuBIDqvH0mg,07 prompts,,planned
+folder,/Users/macbookair/Documents/문서 - 강병의 MacBook Air/personal/09 openclaw/08 PROJECT,08 PROJECT,04_Use_Cases,1DehycjVxfq7AxwAcpMSjvC8T2fTCOx8b,08 PROJECT,,planned
+file,/Users/macbookair/Documents/문서 - 강병의 MacBook Air/personal/09 openclaw/Clawdbot_Agent.png,Clawdbot_Agent.png,07_Assets,1OEUFAHdW58fvhV0-Fz_i5gu0G5zlbECA,Clawdbot_Agent.png,1.46,planned
+file,/Users/macbookair/Documents/문서 - 강병의 MacBook Air/personal/09 openclaw/OpenClaw Ebook - Final.pdf,OpenClaw Ebook - Final.pdf,05_Docs,1jJV0WHsl0VAy5hoGQxYsKEuBIDqvH0mg,OpenClaw Ebook - Final.pdf,0.69,planned
+file,/Users/macbookair/Documents/문서 - 강병의 MacBook Air/personal/09 openclaw/PWelo1_03-07.jpg,PWelo1_03-07.jpg,07_Assets,1OEUFAHdW58fvhV0-Fz_i5gu0G5zlbECA,PWelo1_03-07.jpg,0.0,planned
+file,/Users/macbookair/Documents/문서 - 강병의 MacBook Air/personal/09 openclaw/moltbot_architecture.jpeg,moltbot_architecture.jpeg,07_Assets,1OEUFAHdW58fvhV0-Fz_i5gu0G5zlbECA,moltbot_architecture.jpeg,0.3,planned
+file,/Users/macbookair/Documents/문서 - 강병의 MacBook Air/personal/09 openclaw/obsidian-1.0.0.zip,obsidian-1.0.0.zip,07_Assets,1OEUFAHdW58fvhV0-Fz_i5gu0G5zlbECA,obsidian-1.0.0.zip,0.0,planned
+file,/Users/macbookair/Documents/문서 - 강병의 MacBook Air/personal/09 openclaw/openclaw_analysis.md.resolved,openclaw_analysis.md.resolved,05_Docs,1jJV0WHsl0VAy5hoGQxYsKEuBIDqvH0mg,openclaw_analysis.md.resolved,0.02,planned
+file,/Users/macbookair/Documents/문서 - 강병의 MacBook Air/personal/09 openclaw/walkthrough.md.resolved,walkthrough.md.resolved,05_Docs,1jJV0WHsl0VAy5hoGQxYsKEuBIDqvH0mg,walkthrough.md.resolved,0.02,planned

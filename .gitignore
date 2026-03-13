@@ -61,3 +61,6 @@ credentials/
 *.jsonl
 memory/*.sqlite
 openclaw.json.pre-*
+
+# large local backups
+/workspace/tmp_backups/*.zip
